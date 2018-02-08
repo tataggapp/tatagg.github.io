@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Tatagg | Using Plugins </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+
+    <!-- fonts -->
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Ubuntu:300,400,500,600,700" rel="stylesheet">
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="/style/doc.css">
+
+    <!-- favicon -->
+    <link rel="icon" href="/images/favicon.ico">
+
+    
+
+  </head>
+  <body>
+
+   <script>window.__INITIAL_STATE__ = {"page":{"title":"Using Plugins","path":"swagger/using-plugins.html"},"data":{"navigation":{"logo":{"text":"Tatagg","type":"link","path":"index.html"},"main":[{"text":"Quick Start","type":"link","path":"doc/quick-start.html"},{"text":"How To Add An Entry","type":"link","path":"doc/how-to-add-an-entry.html"},{"text":"Using Plugins","type":"link","path":"doc/using-plugins.html"},{"text":"Plugins","type":"label"},{"text":"Add Tag","type":"link","path":"plugin/add-tag.html"},{"text":"Get Title","type":"link","path":"plugin/get-title.html"},{"text":"Sina Weibo","type":"link","path":"plugin/sina-weibo.html"}]}},"config":{"timezone":"UTC","root":"/","time_format":"HH:mm:ss","theme":"doc","theme_config":{"swagger_ui":{"version":2,"permalinks":true,"api_explorer":true,"download":"Download specification","show_extensions":false,"deep_linking":true,"display_operation_id":false,"doc_expansion":"none"},"search":{"skip":false,"background":false,"route":"/lunr.json"},"favicon":"images/favicon.ico"}}}</script>
+
+    <div id="react-navigation-root"><div class="doc-navigation" data-reactroot=""><nav class="doc-navbar"><a href="/index.html" class="doc-navbar__logo"><img src="/images/logo.png" class="doc-navbar__logo__img"/><span class="doc-navbar__logo__text">Tatagg</span></a><i class="dc-icon dc-icon--close dc-icon--interactive doc-sidebar-close doc-navbar__sidebar-close doc-navbar__sidebar-close--desktop"></i><i class="dc-icon dc-icon--menu dc-icon--interactive doc-sidebar-toggle doc-navbar__sidebar-toggle"></i></nav><nav class="doc-sidebar"><div class="doc-sidebar__vertical-menu"><i class="dc-icon dc-icon--menu dc-icon--interactive doc-sidebar-toggle doc-sidebar-toggle--primary doc-sidebar__vertical-menu__item"></i><i class="dc-icon dc-icon--search dc-icon--interactive doc-sidebar__vertical-menu__item doc-sidebar__vertical-menu__item--primary"></i></div><div class="doc-sidebar-content"><div class="doc-sidebar__search-form"></div><ul class="doc-sidebar-list"></ul></div></nav></div></div>
+    <div class="doc-content">
+  <div class="dc-page">
+    <div class="dc-card">
+      <div id="react-search-results-root"></div>
+      <div id="page-content" class="doc-formatting">
+        <h2 id="What-is-a-plugin"><a href="#What-is-a-plugin" class="headerlink" title="What is a plugin"></a>What is a plugin</h2><p>The basic functions of the software is very simple, other extensions are provided in the form of plugins. <strong> Each relatively independent function will be made into a plugin, you can install different plugins to experience the corresponding function. </strong></p>
+<h2 id="Working-mechanism"><a href="#Working-mechanism" class="headerlink" title="Working mechanism"></a>Working mechanism</h2><p>The plugin will only execute on matching entries, and the execution conditions depend on the matching rules that you set. After the plugin has been executed, the contents of the entry (title, note, or tag) will be modified.</p>
+<h2 id="Trigger-timing"><a href="#Trigger-timing" class="headerlink" title="Trigger timing"></a>Trigger timing</h2><p>Plugins can be triggered automatically or manually. Each plugin can be set independently whether to turn on automatic trigger.</p>
+<h3 id="Automatic-trigger"><a href="#Automatic-trigger" class="headerlink" title="Automatic trigger"></a>Automatic trigger</h3><p>When a new entry is added, all plugins that have the automatic trigger option are tried to execute in the order appears in the “My Plugin” list. If the entry matches the current plugin matching rules, the current plugin will be executed. After the execution, the next plugin will be executed. If it does not match, the current plugin will be ignored.</p>
+<p>Since the plugin will modify the contents of the entry after it is executed, whether the next plugin will be executed depends on the contents of the entry. Therefore, different execution orders may produce different results. <strong> By “drag and drop” you can sort “My Plugin” list to ensure the proper order of execution. </strong></p>
+<h3 id="Manual-trigger"><a href="#Manual-trigger" class="headerlink" title="Manual trigger"></a>Manual trigger</h3><p>On an existing entry, you have the option of manually triggering the execution of the plugin. Proceed as follows:</p>
+<ol>
+<li>Slide left on the entry</li>
+<li>Click the plugin button</li>
+<li>Select the plugin to be executed</li>
+</ol>
+<p>Manual trigger support batch operation, you can simultaneously select multiple entries, batch execution plugins.</p>
+
+        <div id="react-support-footer-root"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+
+    
+
+    <!-- js vendors -->
+    <script src="//code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/lunr.js/2.1.0/lunr.min.js"></script>
+
+    <!-- js source  -->
+    <script src="/script/doc.js"></script>
+
+    
+
+  </body>
+</html>
